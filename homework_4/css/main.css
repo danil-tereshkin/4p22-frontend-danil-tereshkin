@@ -1,0 +1,95 @@
+.main-page-header {
+    background-color: gainsboro;
+    width: 1440px;
+}
+
+.img-main-logo {
+    width: 1440px;
+    height: 100px;
+}
+
+.list-navigation {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.navigation-link {
+    color: brown;
+}
+
+.main-header {
+    text-align: center;
+    font-style: italic;
+    font-size: 100px;
+}
+
+.main-section-slider {
+    width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.section-item {
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    margin: 10px;
+    border: solid lime;
+    border-width: 1px 5px 15px;
+    border-radius: 30px 30px 150px 30px;
+    background: linear-gradient(blue, 10%, pink);
+}
+
+.main-footer {
+    background-color: gainsboro;
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-networks-list {
+    margin: 10px;
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.links-list,
+.information-list {
+    margin: 10px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-link {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.odnoklassniki {
+    background: url("../img/ok_icon_71985.png");
+    background-size: 100%;
+}
+
+.vkontakte {
+    background: url("../img/vkontakte_icon_69251.png");
+    background-size: 100%;
+}
+
+.moymir {
+    border-radius: 20px;
+    background: url("../img/my_share_icon.png");
+    background-size: 100%;
+}
