@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.common-header {
+    /* position: relative; */
+    width: 1440px;
+    height: 89px;
+    background: rgba(89, 11, 255, 1);
+}
+
+.common-header h1 {
+    padding-top: 13px;
+    padding-left: 29px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.address-book-content {
+    position: relative;
+    width: 1080px;
+    margin-top: 54px;
+    margin-left: 335px;
+}
+
+.address-book-content__letter-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 41px;
+    background: rgba(89, 11, 255, 1);
+    z-index: 10;
+}
+
+.address-book-content__letter-header-h2 {
+    color: rgba(255, 255, 255, 1);
+    padding-top: 4px;
+    padding-left: 13px;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.address-book-content__letter-list-of-names {
+    position: relative;
+    padding-top: 13px;
+    padding-left: 13px;
+    padding-bottom: 30px;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.links {
+    position: fixed;
+    left: 25px;
+    top: 151px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    z-index: 100;
+}
+
+.links__h2 {
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 23px;
+}
+
+.links__list-of-links {
+    color: rgba(255, 113, 11, 1);
+    text-decoration: underline;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.links__list-of-links-item {
+    padding-bottom: 12px;
+}
+
+.separator {
+    height: 451px;
+    width: 2px;
+    left: 280px;
+    top: 2px;
+    border-radius: 0px;
+    background: rgba(196, 196, 196, 1);
+    position: fixed;
+    width: 2px;
+    height: 451px;
+    left: 285px;
+    top: 138px;
+}
