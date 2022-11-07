@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.content {
+    width: 100vw;
+    height: 100%;
+    font-family: Roboto;
+    font-weight: 700;
+    background: rgba(27, 36, 115, 1);
+}
+
+.login-form {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 1);
+}
+
+.login-form__heading {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    color: rgba(120, 120, 120, 1);
+}
+
+.login-form__input-email-label {
+    position: absolute;
+    color: rgba(120, 120, 120, 1);
+}
+
+.login-form__input-email {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-weight: 700;
+    color: rgba(120, 120, 120, 1);
+}
+
+.login-form__input-email::placeholder {
+    color: rgba(204, 204, 204, 1);
+}
+
+.login-form__input-password-label {
+    position: absolute;
+    font-weight: 700;
+    color: rgba(120, 120, 120, 1);
+}
+
+.login-form__input-password {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-weight: 700;
+    color: rgba(120, 120, 120, 1);
+}
+
+.login-form__input-password::placeholder {
+    color: rgba(204, 204, 204, 1);
+}
+
+.login-form__subscribe {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.login-form__subscribe-input {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+}
+
+.login-form__subscribe-input-label {
+    font-family: Roboto;
+    font-weight: 400;
+    color: rgba(120, 120, 120, 1);
+}
+
+.login-form__subscribe>input:checked+.login-form__subscribe-input_decoratfion {
+    background: url("../img/icon.svg");
+    background-size: 100%;
+}
+
+.login-button {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    background: rgba(26, 34, 107, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .login-form {
+        top: calc(20 / 768 * 100vw);
+        width: calc(728 / 768 * 100vw);
+        height: calc(697 / 768 * 100vw);
+        border-radius: calc(20 / 768 * 100vw);
+        box-shadow: 0px 0px calc(40 / 768 * 100vw) calc(10 / 768 * 100vw) rgba(0, 0, 0, 0.25);
+    }
+
+    .login-form__heading {
+        top: calc(38 / 768 * 100vw);
+        font-size: calc(60 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
+    }
+
+    .login-form__input-email-label {
+        top: calc(101 / 768 * 100vw);
+        left: calc(53 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+
+    .login-form__input-email {
+        top: calc(75 / 768 * 100vw);
+        padding-left: calc(15 / 768 * 100vw);
+        width: calc(638 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        border-radius: calc(10 / 768 * 100vw);
+    }
+
+    .login-form__input-password-label {
+        top: calc(187 / 768 * 100vw);
+        left: calc(53 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+
+    .login-form__input-password {
+        top: calc(110 / 768 * 100vw);
+        padding-left: calc(15 / 768 * 100vw);
+        width: calc(638 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        border-radius: calc(10 / 768 * 100vw);
+    }
+
+    .login-form__subscribe {
+        top: calc(129 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+    }
+
+    .login-form__subscribe-input {
+        width: calc(638 / 768 * 100vw);
+    }
+
+    .login-form__subscribe-input-label {
+        font-size: calc(18 / 768 * 100vw);
+        padding-left: calc(10 / 768 * 100vw);
+    }
+
+    .login-form__subscribe>div {
+        width: calc(32 / 768 * 100vw);
+        height: calc(32 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        border-radius: calc(7 / 768 * 100vw);
+    }
+
+    .login-form__subscribe>input:checked+.login-form__subscribe-input_decoratfion {
+        width: calc(32 / 768 * 100vw);
+        height: calc(32 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+    }
+
+    .login-button {
+        top: calc(193 / 768 * 100vw);
+        width: calc(220 / 768 * 100vw);
+        height: calc(80 / 768 * 100vw);
+        font-size: calc(32 / 768 * 100vw);
+        border-radius: calc(10 / 768 * 100vw);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+    .login-form {
+        top: calc(82 / 1140 * 100vw);
+        width: calc(600 / 1140 * 100vw);
+        height: calc(412 / 1140 * 100vw);
+        border-radius: calc(20 / 1140 * 100vw);
+        box-shadow: 0px 0px calc(40 / 1140 * 100vw) calc(10 / 1140 * 100vw) rgba(0, 0, 0, 0.25);
+    }
+
+    .login-form__heading {
+        top: calc(26 / 1140 * 100vw);
+        font-size: calc(50 / 1140 * 100vw);
+        line-height: calc(50 / 1140 * 100vw);
+    }
+
+    .login-form__input-email-label {
+        top: calc(93 / 1140 * 100vw);
+        left: calc(53 / 1140 * 100vw);
+        font-size: calc(16 / 1140 * 100vw);
+        line-height: calc(16 / 1140 * 100vw);
+    }
+
+    .login-form__input-email {
+        top: calc(62 / 1140 * 100vw);
+        padding-left: calc(15 / 1140 * 100vw);
+        width: calc(510 / 1140 * 100vw);
+        height: calc(49 / 1140 * 100vw);
+        font-size: calc(28 / 1140 * 100vw);
+        line-height: calc(36 / 1140 * 100vw);
+        border: calc(2 / 1140 * 100vw) solid rgba(120, 120, 120, 1);
+        border-radius: calc(10 / 1140 * 100vw);
+    }
+
+    .login-form__input-password-label {
+        /* В задании при ширине вьюпорта 1440px лейбл "password" отсутствует.
+    Подозреваю, что это ошибка дизайнера, т.к. при ширине вьюпорта 768px
+    лейбл в макете есть. Если ошибки в дизайне нет, и лейбл "password"
+    при ширине вьюпорта 1440px отображаться ыне должен, следует раскаментить
+    следующую строку*/
+        /* opacity: 0; */
+        top: calc(174 / 1140 * 100vw);
+        left: calc(53 / 1140 * 100vw);
+        font-size: calc(16 / 1140 * 100vw);
+        line-height: calc(16 / 1140 * 100vw);
+    }
+
+    .login-form__input-password {
+        top: calc(94 / 1140 * 100vw);
+        padding-left: calc(15 / 1140 * 100vw);
+        width: calc(510 / 1140 * 100vw);
+        height: calc(49 / 1140 * 100vw);
+        font-size: calc(28 / 1140 * 100vw);
+        line-height: calc(36 / 1140 * 100vw);
+        border: calc(2 / 1140 * 100vw) solid rgba(120, 120, 120, 1);
+        border-radius: calc(10 / 1140 * 100vw);
+    }
+
+    .login-form__subscribe {
+        top: calc(110 / 1140 * 100vw);
+        left: calc(45 / 1140 * 100vw);
+    }
+
+    .login-form__subscribe-input {
+        width: calc(510 / 1140 * 100vw);
+    }
+
+    .login-form__subscribe-input-label {
+        font-size: calc(14 / 1140 * 100vw);
+        padding-left: calc(10 / 1140 * 100vw);
+    }
+
+    .login-form__subscribe>div {
+        width: calc(24 / 1140 * 100vw);
+        height: calc(24 / 1140 * 100vw);
+        border: calc(2 / 1140 * 100vw) solid rgba(120, 120, 120, 1);
+        border-radius: calc(7 / 1140 * 100vw);
+    }
+
+    .login-form__subscribe>input:checked+.login-form__subscribe-input_decoratfion {
+        width: calc(24 / 1140 * 100vw);
+        height: calc(24 / 1140 * 100vw);
+        border: calc(2 / 1140 * 100vw) solid rgba(120, 120, 120, 1);
+    }
+
+    .login-button {
+        top: calc(162 / 1140 * 100vw);
+        width: calc(180 / 1140 * 100vw);
+        height: calc(52 / 1140 * 100vw);
+        font-size: calc(24 / 1140 * 100vw);
+        border-radius: calc(10 / 1140 * 100vw);
+    }
+}
