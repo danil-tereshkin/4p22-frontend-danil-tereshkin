@@ -496,6 +496,7 @@ body {
     .registration-form__confirm-password-input::placeholder,
     .registration-form__about-me-input::placeholder {
         color: rgba(204, 204, 204, 1);
+        font-family: Roboto;
     }
 
     .registration-form__password-label {
@@ -679,6 +680,7 @@ body {
         height: 246px;
         color: rgba(120, 120, 120, 1);
         border: 2px solid rgba(120, 120, 120, 1);
+        font-family: Roboto;
         font-size: 28px;
         font-weight: 700;
         line-height: 36px;
@@ -806,6 +808,7 @@ body {
     .registration-form__confirm-password-input::placeholder,
     .registration-form__about-me-input::placeholder {
         color: rgba(204, 204, 204, 1);
+        font-family: Roboto;
     }
 
     .registration-form__password-label {
@@ -986,6 +989,7 @@ body {
         height: calc(246 / 1440 * 100vw);
         color: rgba(120, 120, 120, 1);
         border: calc(2 / 1440 * 100vw) solid rgba(120, 120, 120, 1);
+        font-family: Roboto;
         font-size: calc(28 / 1440 * 100vw);
         font-weight: 700;
         line-height: calc(36 / 1440 * 100vw);
@@ -1111,6 +1115,7 @@ body {
     .registration-form__confirm-password-input::placeholder,
     .registration-form__about-me-input::placeholder {
         color: rgba(204, 204, 204, 1);
+        font-family: Roboto;
     }
 
     .registration-form__password-label {
@@ -1291,6 +1296,7 @@ body {
         height: calc(246 / 768 * 100vw);
         color: rgba(120, 120, 120, 1);
         border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        font-family: Roboto;
         font-size: calc(28 / 768 * 100vw);
         font-weight: 700;
         line-height: calc(36 / 768 * 100vw);
