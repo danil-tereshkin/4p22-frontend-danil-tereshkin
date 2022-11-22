@@ -1,0 +1,1466 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: rgba(120, 120, 120, 1);
+    -webkit-box-shadow: 0 0 0px 40rem #ffff inset;
+}
+
+/* Вход */
+/* от 1441 и выше */
+@media screen and (min-width: 1441px) {
+    .main-header {
+        position: relative;
+        margin: 0 auto;
+        width: 1440px;
+        height: 80px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .main-header__logo {
+        position: absolute;
+        width: 222px;
+        height: 50px;
+        top: 18px;
+        left: 30px;
+        background-image: url(../img/1280px-IU_logo\ 1.svg);
+        background-size: 100%;
+    }
+
+    .main-header__heading {
+        position: absolute;
+        margin: 0;
+        top: 21px;
+        left: 282px;
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 44px;
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .main-header__menu {
+        position: relative;
+        font-family: Inter;
+        text-decoration: none;
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        list-style: none;
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .list__item_registration-link {
+        position: absolute;
+        top: 25px;
+        left: 1152px;
+    }
+
+    .list__item_login-link {
+        position: absolute;
+        top: 25px;
+        left: 1337px;
+    }
+
+    .list__item_theme_current-page {
+        color: rgba(26, 34, 107, 1);
+    }
+
+    .login-form {
+        position: relative;
+        width: 600px;
+        height: 383px;
+        margin: 125px auto 0;
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-weight: 700;
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .login-form__heading {
+        position: relative;
+        margin: 0;
+        top: 26px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .login-form__email-label {
+        position: absolute;
+        top: 93px;
+        left: 53px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .login-form__email-input {
+        position: relative;
+        top: 62px;
+        left: 45px;
+        width: 510px;
+        height: 49px;
+        color: rgba(120, 120, 120, 1);
+        border: 2px solid rgba(120, 120, 120, 1);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        padding-left: 13px;
+        outline: none;
+    }
+
+    .login-form__email-input::placeholder,
+    .login-form__password-input::placeholder {
+        color: rgba(204, 204, 204, 1);
+    }
+
+    .login-form__password-label {
+        position: absolute;
+        top: 172px;
+        left: 53px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .login-form__password-input {
+        position: relative;
+        top: 94px;
+        left: 45px;
+        width: 510px;
+        height: 49px;
+        color: rgba(120, 120, 120, 1);
+        border: 2px solid rgba(120, 120, 120, 1);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        padding-left: 13px;
+        outline: none;
+    }
+
+    .login-form__button {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        top: 146px;
+        width: 180px;
+        height: 52px;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(26, 34, 107, 1);
+        border: none;
+    }
+}
+
+/* от 1440 до 769 */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .main-header {
+        position: relative;
+        margin: 0 auto;
+        width: calc(1440 / 1440 * 100vw);
+        height: calc(80 / 1440 * 100vw);
+        box-shadow: 0px calc(4 / 1440 * 100vw) calc(4 / 1440 * 100vw) 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .main-header__logo {
+        position: absolute;
+        width: calc(222 / 1440 * 100vw);
+        height: calc(50 / 1440 * 100vw);
+        top: calc(18 / 1440 * 100vw);
+        left: calc(30 / 1440 * 100vw);
+        background-image: url(../img/1280px-IU_logo\ 1.svg);
+        background-size: 100%;
+    }
+
+    .main-header__heading {
+        position: absolute;
+        margin: 0;
+        top: calc(21 / 1440 * 100vw);
+        left: calc(282 / 1440 * 100vw);
+        font-family: Inter;
+        font-size: calc(36 / 1440 * 100vw);
+        font-weight: 700;
+        line-height: calc(44 / 1440 * 100vw);
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .main-header__menu {
+        position: relative;
+        font-family: Inter;
+        text-decoration: none;
+        margin: 0;
+        font-size: calc(24 / 1440 * 100vw);
+        font-weight: 700;
+        line-height: calc(29 / 1440 * 100vw);
+        list-style: none;
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .list__item_registration-link {
+        position: absolute;
+        top: calc(25 / 1440 * 100vw);
+        left: calc(1152 / 1440 * 100vw);
+    }
+
+    .list__item_login-link {
+        position: absolute;
+        top: calc(25 / 1440 * 100vw);
+        left: calc(1337 / 1440 * 100vw);
+    }
+
+    .list__item_theme_current-page {
+        color: rgba(26, 34, 107, 1);
+    }
+
+    .login-form {
+        position: relative;
+        width: calc(600 / 1440 * 100vw);
+        height: calc(383 / 1440 * 100vw);
+        margin: calc(125 / 1440 * 100vw) auto 0;
+        box-shadow: 0px 0px calc(40 / 1440 * 100vw) calc(10 / 1440 * 100vw) rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-weight: 700;
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .login-form__heading {
+        position: relative;
+        margin: 0;
+        top: calc(26 / 1440 * 100vw);
+        text-align: center;
+        font-size: calc(50 / 1440 * 100vw);
+        line-height: calc(50 / 1440 * 100vw);
+    }
+
+    .login-form__email-label {
+        position: absolute;
+        top: calc(93 / 1440 * 100vw);
+        left: calc(53 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+
+    .login-form__email-input {
+        position: relative;
+        top: calc(62 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 1440 * 100vw) solid rgba(120, 120, 120, 1);
+        font-size: calc(28 / 1440 * 100vw);
+        font-weight: 700;
+        line-height: calc(36 / 1440 * 100vw);
+        padding-left: calc(13 / 1440 * 100vw);
+        outline: none;
+    }
+
+    .login-form__email-input::placeholder,
+    .login-form__password-input::placeholder {
+        color: rgba(204, 204, 204, 1);
+    }
+
+    .login-form__password-label {
+        position: absolute;
+        top: calc(172 / 1440 * 100vw);
+        left: calc(53 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+
+    .login-form__password-input {
+        position: relative;
+        top: calc(94 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 1440 * 100vw) solid rgba(120, 120, 120, 1);
+        font-size: calc(28 / 1440 * 100vw);
+        font-weight: 700;
+        padding-left: calc(13 / 1440 * 100vw);
+        outline: none;
+    }
+
+    .login-form__button {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        top: calc(146 / 1440 * 100vw);
+        width: calc(180 / 1440 * 100vw);
+        height: calc(52 / 1440 * 100vw);
+        font-family: Roboto;
+        font-size: calc(24 / 1440 * 100vw);
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(26, 34, 107, 1);
+        border: none;
+    }
+}
+
+/* от 768 и ниже */
+@media screen and (max-width: 768px) {
+    .main-header {
+        position: relative;
+        margin: 0 auto;
+        width: calc(768 / 768 * 100vw);
+        height: calc(80 / 768 * 100vw);
+        box-shadow: 0px calc(4 / 768 * 100vw) calc(4 / 768 * 100vw) 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .main-header__logo {
+        position: absolute;
+        width: calc(124 / 768 * 100vw);
+        height: calc(25 / 768 * 100vw);
+        top: calc(25 / 768 * 100vw);
+        left: calc(20 / 768 * 100vw);
+        background-image: url(../img/1280px-IU_logo\ 1.svg);
+        background-size: 100%;
+    }
+
+    .main-header__heading {
+        position: absolute;
+        margin: 0;
+        top: calc(23 / 768 * 100vw);
+        left: calc(178 / 768 * 100vw);
+        font-family: Inter;
+        font-size: calc(24 / 768 * 100vw);
+        font-weight: 700;
+        line-height: calc(29 / 768 * 100vw);
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .main-header__menu {
+        position: relative;
+        font-family: Inter;
+        text-decoration: none;
+        margin: 0;
+        font-size: calc(16 / 768 * 100vw);
+        font-weight: 700;
+        line-height: calc(19 / 768 * 100vw);
+        list-style: none;
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .list__item_registration-link {
+        position: absolute;
+        top: calc(30 / 768 * 100vw);
+        left: calc(559 / 768 * 100vw);
+    }
+
+    .list__item_login-link {
+        position: absolute;
+        top: calc(30 / 768 * 100vw);
+        left: calc(700 / 768 * 100vw);
+    }
+
+    .list__item_theme_current-page {
+        color: rgba(26, 34, 107, 1);
+    }
+
+    .login-form {
+        position: relative;
+        width: calc(600 / 768 * 100vw);
+        height: calc(383 / 768 * 100vw);
+        margin: calc(80 / 768 * 100vw) auto 0;
+        box-shadow: 0px 0px calc(40 / 768 * 100vw) calc(10 / 768 * 100vw) rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-weight: 700;
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .login-form__heading {
+        position: relative;
+        margin: 0;
+        top: calc(26 / 768 * 100vw);
+        text-align: center;
+        font-size: calc(50 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
+    }
+
+    .login-form__email-label {
+        position: absolute;
+        top: calc(93 / 768 * 100vw);
+        left: calc(53 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+
+    .login-form__email-input {
+        position: relative;
+        top: calc(62 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        font-size: calc(28 / 768 * 100vw);
+        font-weight: 700;
+        padding-left: calc(13 / 768 * 100vw);
+        outline: none;
+    }
+
+    .login-form__email-input::placeholder,
+    .login-form__password-input::placeholder {
+        color: rgba(204, 204, 204, 1);
+    }
+
+    .login-form__password-label {
+        position: absolute;
+        top: calc(172 / 768 * 100vw);
+        left: calc(53 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+
+    .login-form__password-input {
+        position: relative;
+        top: calc(94 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        font-size: calc(28 / 768 * 100vw);
+        font-weight: 700;
+        padding-left: calc(13 / 768 * 100vw);
+        outline: none;
+    }
+
+    .login-form__button {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        top: calc(146 / 768 * 100vw);
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+        font-family: Roboto;
+        font-size: calc(24 / 768 * 100vw);
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(26, 34, 107, 1);
+        border: none;
+    }
+}
+
+/* Регистрация */
+/* от 1441 и выше */
+@media screen and (min-width: 1441px) {
+    .registration-form {
+        position: relative;
+        width: 600px;
+        height: 875px;
+        margin: 100px auto 0;
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-weight: 700;
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .registration-form__heading {
+        position: relative;
+        margin: 0;
+        top: 26px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .registration-form__email-label {
+        position: absolute;
+        top: 91px;
+        left: 45px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .registration-form__email-input {
+        position: relative;
+        top: 62px;
+        left: 45px;
+        width: 510px;
+        height: 49px;
+        color: rgba(120, 120, 120, 1);
+        border: 2px solid rgba(120, 120, 120, 1);
+        font-size: 28px;
+        font-weight: 700;
+        padding-left: 13px;
+        outline: none;
+    }
+
+    .registration-form__email-input::placeholder,
+    .registration-form__password-input::placeholder,
+    .registration-form__confirm-password-input::placeholder,
+    .registration-form__about-me-input::placeholder {
+        color: rgba(204, 204, 204, 1);
+        font-family: Roboto;
+    }
+
+    .registration-form__password-label {
+        position: absolute;
+        top: 172px;
+        left: 45px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .registration-form__password-input {
+        position: relative;
+        top: 94px;
+        left: 45px;
+        width: 510px;
+        height: 49px;
+        color: rgba(120, 120, 120, 1);
+        border: 2px solid rgba(120, 120, 120, 1);
+        font-size: 28px;
+        font-weight: 700;
+        padding-left: 13px;
+        outline: none;
+    }
+
+    .registration-form__confirm-password-label {
+        position: absolute;
+        top: 253px;
+        left: 45px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .theme_star {
+        left: 33px;
+    }
+
+    .registration-form__confirm-password-input {
+        position: relative;
+        top: 126px;
+        left: 45px;
+        width: 510px;
+        height: 49px;
+        color: rgba(120, 120, 120, 1);
+        border: 2px solid rgba(120, 120, 120, 1);
+        font-size: 28px;
+        font-weight: 700;
+        padding-left: 13px;
+        outline: none;
+    }
+
+    .registration-form__gender-heading {
+        position: relative;
+        margin: 0;
+        top: 137px;
+        left: 43px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .registration-form__gender_male,
+    .registration-form__gender_female {
+        position: relative;
+        top: 142px;
+        height: 20px;
+    }
+
+    .registration-form__gender_male>input {
+        position: absolute;
+        opacity: 0;
+        margin: 0;
+        top: 0;
+        left: 45px;
+        width: 510px;
+        height: 20px;
+    }
+
+    .registration-form__gender_male>label {
+        box-sizing: border-box;
+        position: relative;
+        height: 30px;
+        padding-left: 29px;
+        left: 45px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .registration-form__gender_male>label::before {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: -2px;
+        content: '';
+        width: 20px;
+        height: 20px;
+        border: 2px solid rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_male>label::after {
+        box-sizing: border-box;
+        position: absolute;
+        opacity: 0;
+        left: 4px;
+        top: 2px;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_male>input:checked+label::after {
+        opacity: 1;
+    }
+
+    .registration-form__gender_female {
+        top: 151px;
+    }
+
+    .registration-form__gender_female>input {
+        position: absolute;
+        opacity: 0;
+        margin: 0;
+        top: 0;
+        left: 45px;
+        width: 510px;
+        height: 20px;
+    }
+
+    .registration-form__gender_female>label {
+        box-sizing: border-box;
+        position: relative;
+        height: 30px;
+        padding-left: 29px;
+        top: 0;
+        left: 45px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .registration-form__gender_female>label::before {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: -2px;
+        content: '';
+        width: 20px;
+        height: 20px;
+        border: 2px solid rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_female>label::after {
+        box-sizing: border-box;
+        position: absolute;
+        opacity: 0;
+        left: 4px;
+        top: 2px;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_female>input:checked+label::after {
+        opacity: 1;
+    }
+
+    .registration-form__about-me-label {
+        position: absolute;
+        top: 415px;
+        left: 45px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .registration-form__about-me-input {
+        position: relative;
+        top: 183px;
+        left: 45px;
+        width: 510px;
+        height: 246px;
+        color: rgba(120, 120, 120, 1);
+        border: 2px solid rgba(120, 120, 120, 1);
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        padding-left: 13px;
+        outline: none;
+    }
+
+    .registration-form__subscribe {
+        position: relative;
+        top: 207px;
+        height: 24px;
+    }
+
+    .registration-form__subscribe>input {
+        position: absolute;
+        opacity: 0;
+        margin: 0;
+        top: 0;
+        left: 43px;
+        width: 510px;
+        height: 24px;
+    }
+
+    .registration-form__subscribe>label {
+        box-sizing: border-box;
+        position: relative;
+        height: 24px;
+        padding-left: 34px;
+        left: 43px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .registration-form__subscribe>label::before {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: -3px;
+        content: '';
+        width: 24px;
+        height: 24px;
+        border: 2px solid rgba(120, 120, 120, 1);
+    }
+
+    .registration-form__subscribe>label::after {
+        box-sizing: border-box;
+        position: absolute;
+        opacity: 0;
+        left: 6px;
+        top: 3px;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: rgba(120, 120, 120, 1);
+    }
+
+    .registration-form__subscribe>input:checked+label::after {
+        opacity: 1;
+    }
+
+    .registration-form__button {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        top: 263px;
+        width: 180px;
+        height: 52px;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(26, 34, 107, 1);
+        border: none;
+    }
+
+    .field-entry-error {
+        border: 2px solid rgba(238, 36, 36, 1);
+    }
+
+    .email-wrong,
+    .pass-wrong,
+    .confirm-pass-wrong {
+        position: absolute;
+        top: 91px;
+        right: 46px;
+        color: red;
+        text-align: right;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .pass-wrong {
+        top: 172px;
+    }
+
+    .confirm-pass-wrong {
+        top: 253px;
+    }
+}
+
+/* от 1440 до 769 */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .registration-form {
+        position: relative;
+        width: calc(600 / 1440 * 100vw);
+        height: calc(875 / 1440 * 100vw);
+        margin: calc(100 / 1440 * 100vw) auto 0;
+        box-shadow: 0px 0px calc(40 / 1440 * 100vw) calc(10 / 1440 * 100vw) rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-weight: 700;
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .registration-form__heading {
+        position: relative;
+        margin: 0;
+        top: calc(26 / 1440 * 100vw);
+        text-align: center;
+        font-size: calc(50 / 1440 * 100vw);
+        line-height: calc(50 / 1440 * 100vw);
+    }
+
+    .registration-form__email-label {
+        position: absolute;
+        top: calc(91 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+
+    .registration-form__email-input {
+        position: relative;
+        top: calc(62 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 1440 * 100vw) solid rgba(120, 120, 120, 1);
+        font-size: calc(28 / 1440 * 100vw);
+        font-weight: 700;
+        padding-left: calc(13 / 1440 * 100vw);
+        outline: none;
+    }
+
+    .registration-form__email-input::placeholder,
+    .registration-form__password-input::placeholder,
+    .registration-form__confirm-password-input::placeholder,
+    .registration-form__about-me-input::placeholder {
+        color: rgba(204, 204, 204, 1);
+        font-family: Roboto;
+    }
+
+    .registration-form__password-label {
+        position: absolute;
+        top: calc(172 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+
+    .registration-form__password-input {
+        position: relative;
+        top: calc(94 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 1440 * 100vw) solid rgba(120, 120, 120, 1);
+        font-size: calc(28 / 1440 * 100vw);
+        font-weight: 700;
+        padding-left: calc(13 / 1440 * 100vw);
+        outline: none;
+    }
+
+    .registration-form__confirm-password-label {
+        position: absolute;
+        top: calc(253 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+
+    .theme_star {
+        left: calc(33 / 1440 * 100vw);
+    }
+
+    .registration-form__confirm-password-input {
+        position: relative;
+        top: calc(126 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 1440 * 100vw) solid rgba(120, 120, 120, 1);
+        font-size: calc(28 / 1440 * 100vw);
+        font-weight: 700;
+        padding-left: calc(13 / 1440 * 100vw);
+        outline: none;
+    }
+
+    .registration-form__gender-heading {
+        position: relative;
+        margin: 0;
+        top: calc(137 / 1440 * 100vw);
+        left: calc(43 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+
+    .registration-form__gender_male,
+    .registration-form__gender_female {
+        position: relative;
+        top: calc(142 / 1440 * 100vw);
+        height: calc(20 / 1440 * 100vw);
+    }
+
+    .registration-form__gender_male>input {
+        position: absolute;
+        opacity: 0;
+        margin: 0;
+        top: 0;
+        left: calc(45 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(20 / 1440 * 100vw);
+    }
+
+    .registration-form__gender_male>label {
+        position: absolute;
+        height: calc(30 / 1440 * 100vw);
+        padding-left: calc(29 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        font-size: calc(14 / 1440 * 100vw);
+        font-weight: 400;
+        line-height: calc(20 / 1440 * 100vw);
+    }
+
+    .registration-form__gender_male>label::before {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: calc((2 / 1440 * 100vw) * -1);
+        content: '';
+        width: calc(20 / 1440 * 100vw);
+        height: calc(20 / 1440 * 100vw);
+        border: calc(2 / 1440 * 100vw) solid rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_male>label::after {
+        position: absolute;
+        opacity: 0;
+        left: calc(4 / 1440 * 100vw);
+        top: calc(2 / 1440 * 100vw);
+        content: '';
+        width: calc(12 / 1440 * 100vw);
+        height: calc(12 / 1440 * 100vw);
+        background: rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_male>input:checked+label::after {
+        opacity: 1;
+    }
+
+    .registration-form__gender_female {
+        top: calc(151 / 1440 * 100vw);
+    }
+
+    .registration-form__gender_female>input {
+        position: absolute;
+        opacity: 0;
+        margin: 0;
+        top: 0;
+        left: calc(45 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(20 / 1440 * 100vw);
+    }
+
+    .registration-form__gender_female>label {
+        position: absolute;
+        height: calc(30 / 1440 * 100vw);
+        padding-left: calc(29 / 1440 * 100vw);
+        top: 0;
+        left: calc(45 / 1440 * 100vw);
+        font-size: calc(14 / 1440 * 100vw);
+        font-weight: 400;
+        line-height: calc(20 / 1440 * 100vw);
+    }
+
+    .registration-form__gender_female>label::before {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: calc((2 / 1440 * 100vw) * -1);
+        content: '';
+        width: calc(20 / 1440 * 100vw);
+        height: calc(20 / 1440 * 100vw);
+        border: calc(2 / 1440 * 100vw) solid rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_female>label::after {
+        box-sizing: border-box;
+        position: absolute;
+        opacity: 0;
+        left: calc(4 / 1440 * 100vw);
+        top: calc(2 / 1440 * 100vw);
+        content: '';
+        width: calc(12 / 1440 * 100vw);
+        height: calc(12 / 1440 * 100vw);
+        background: rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_female>input:checked+label::after {
+        opacity: 1;
+    }
+
+    .registration-form__about-me-label {
+        position: absolute;
+        top: calc(415 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+
+    .registration-form__about-me-input {
+        position: relative;
+        top: calc(183 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(246 / 1440 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 1440 * 100vw) solid rgba(120, 120, 120, 1);
+        font-family: Roboto;
+        font-size: calc(28 / 1440 * 100vw);
+        font-weight: 700;
+        line-height: calc(36 / 1440 * 100vw);
+        padding-left: calc(13 / 1440 * 100vw);
+        outline: none;
+    }
+
+    .registration-form__subscribe {
+        position: relative;
+        top: calc(207 / 1440 * 100vw);
+        height: calc(24 / 1440 * 100vw);
+    }
+
+    .registration-form__subscribe>input {
+        position: absolute;
+        opacity: 0;
+        margin: 0;
+        top: 0;
+        left: calc(43 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(24 / 1440 * 100vw);
+    }
+
+    .registration-form__subscribe>label {
+        position: absolute;
+        height: calc(24 / 1440 * 100vw);
+        padding-left: calc(34 / 1440 * 100vw);
+        left: calc(43 / 1440 * 100vw);
+        font-size: calc(14 / 1440 * 100vw);
+        font-weight: 400;
+        line-height: calc(24 / 1440 * 100vw);
+    }
+
+    .registration-form__subscribe>label::before {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: calc((3 / 1440 * 100vw) * -1);
+        content: '';
+        width: calc(24 / 1440 * 100vw);
+        height: calc(24 / 1440 * 100vw);
+        border: calc(2 / 1440 * 100vw) solid rgba(120, 120, 120, 1);
+    }
+
+    .registration-form__subscribe>label::after {
+        position: absolute;
+        opacity: 0;
+        left: calc(6 / 1440 * 100vw);
+        top: calc(3 / 1440 * 100vw);
+        content: '';
+        width: calc(12 / 1440 * 100vw);
+        height: calc(12 / 1440 * 100vw);
+        background: rgba(120, 120, 120, 1);
+    }
+
+    .registration-form__subscribe>input:checked+label::after {
+        opacity: 1;
+    }
+
+    .registration-form__button {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        top: calc(263 / 1440 * 100vw);
+        width: calc(180 / 1440 * 100vw);
+        height: calc(52 / 1440 * 100vw);
+        font-family: Roboto;
+        font-size: calc(24 / 1440 * 100vw);
+        font-weight: 700;
+        line-height: calc(16 / 1440 * 100vw);
+        color: rgba(255, 255, 255, 1);
+        background: rgba(26, 34, 107, 1);
+        border: none;
+    }
+
+    .field-entry-error {
+        border: calc(2 / 1440 * 100vw) solid rgba(238, 36, 36, 1);
+    }
+
+    .email-wrong,
+    .pass-wrong,
+    .confirm-pass-wrong {
+        position: absolute;
+        top: calc(91 / 1440 * 100vw);
+        right: calc(46 / 1440 * 100vw);
+        color: red;
+        text-align: right;
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+
+    .pass-wrong {
+        top: calc(172 / 1440 * 100vw);
+    }
+
+    .confirm-pass-wrong {
+        top: calc(253 / 1440 * 100vw);
+    }
+}
+
+/* от 768 и ниже */
+@media screen and (max-width: 768px) {
+    .registration-form {
+        position: relative;
+        width: calc(600 / 768 * 100vw);
+        height: calc(875 / 768 * 100vw);
+        margin: calc(80 / 768 * 100vw) auto 0;
+        box-shadow: 0px 0px calc(40 / 768 * 100vw) calc(10 / 768 * 100vw) rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-weight: 700;
+        color: rgba(120, 120, 120, 1);
+    }
+
+    .registration-form__heading {
+        position: relative;
+        margin: 0;
+        top: calc(26 / 768 * 100vw);
+        text-align: center;
+        font-size: calc(50 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
+    }
+
+    .registration-form__email-label {
+        position: absolute;
+        top: calc(91 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+
+    .registration-form__email-input {
+        position: relative;
+        top: calc(62 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        font-size: calc(28 / 768 * 100vw);
+        font-weight: 700;
+        padding-left: calc(13 / 768 * 100vw);
+        outline: none;
+    }
+
+    .registration-form__email-input::placeholder,
+    .registration-form__password-input::placeholder,
+    .registration-form__confirm-password-input::placeholder,
+    .registration-form__about-me-input::placeholder {
+        color: rgba(204, 204, 204, 1);
+        font-family: Roboto;
+    }
+
+    .registration-form__password-label {
+        position: absolute;
+        top: calc(172 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+
+    .registration-form__password-input {
+        position: relative;
+        top: calc(94 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        font-size: calc(28 / 768 * 100vw);
+        font-weight: 700;
+        padding-left: calc(13 / 768 * 100vw);
+        outline: none;
+    }
+
+    .registration-form__confirm-password-label {
+        position: absolute;
+        top: calc(253 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+
+    .theme_star {
+        left: calc(34 / 768 * 100vw);
+    }
+
+    .registration-form__confirm-password-input {
+        position: relative;
+        top: calc(126 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        font-size: calc(28 / 768 * 100vw);
+        font-weight: 700;
+        padding-left: calc(13 / 768 * 100vw);
+        outline: none;
+    }
+
+    .registration-form__gender-heading {
+        position: relative;
+        margin: 0;
+        top: calc(137 / 768 * 100vw);
+        left: calc(43 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+
+    .registration-form__gender_male,
+    .registration-form__gender_female {
+        position: relative;
+        top: calc(142 / 768 * 100vw);
+        height: calc(20 / 768 * 100vw);
+    }
+
+    .registration-form__gender_male>input {
+        position: absolute;
+        opacity: 0;
+        margin: 0;
+        top: 0;
+        left: calc(45 / 768 * 100vw);
+        width: calc(510 / 768 * 100vw);
+        height: calc(20 / 768 * 100vw);
+    }
+
+    .registration-form__gender_male>label {
+        position: absolute;
+        height: calc(30 / 768 * 100vw);
+        padding-left: calc(29 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        font-size: calc(14 / 768 * 100vw);
+        font-weight: 400;
+        line-height: calc(20 / 768 * 100vw);
+    }
+
+    .registration-form__gender_male>label::before {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: calc((2 / 768 * 100vw) * -1);
+        content: '';
+        width: calc(20 / 768 * 100vw);
+        height: calc(20 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_male>label::after {
+        position: absolute;
+        opacity: 0;
+        left: calc(4 / 768 * 100vw);
+        top: calc(2 / 768 * 100vw);
+        content: '';
+        width: calc(12 / 768 * 100vw);
+        height: calc(12 / 768 * 100vw);
+        background: rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_male>input:checked+label::after {
+        opacity: 1;
+    }
+
+    .registration-form__gender_female {
+        top: calc(151 / 768 * 100vw);
+    }
+
+    .registration-form__gender_female>input {
+        position: absolute;
+        opacity: 0;
+        margin: 0;
+        top: 0;
+        left: calc(45 / 768 * 100vw);
+        width: calc(510 / 768 * 100vw);
+        height: calc(20 / 768 * 100vw);
+    }
+
+    .registration-form__gender_female>label {
+        position: absolute;
+        height: calc(30 / 768 * 100vw);
+        padding-left: calc(29 / 768 * 100vw);
+        top: 0;
+        left: calc(45 / 768 * 100vw);
+        font-size: calc(14 / 768 * 100vw);
+        font-weight: 400;
+        line-height: calc(20 / 768 * 100vw);
+    }
+
+    .registration-form__gender_female>label::before {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: calc((2 / 768 * 100vw) * -1);
+        content: '';
+        width: calc(20 / 768 * 100vw);
+        height: calc(20 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_female>label::after {
+        box-sizing: border-box;
+        position: absolute;
+        opacity: 0;
+        left: calc(4 / 768 * 100vw);
+        top: calc(2 / 768 * 100vw);
+        content: '';
+        width: calc(12 / 768 * 100vw);
+        height: calc(12 / 768 * 100vw);
+        background: rgba(120, 120, 120, 1);
+        border-radius: 50%;
+    }
+
+    .registration-form__gender_female>input:checked+label::after {
+        opacity: 1;
+    }
+
+    .registration-form__about-me-label {
+        position: absolute;
+        top: calc(415 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+
+    .registration-form__about-me-input {
+        position: relative;
+        top: calc(183 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        width: calc(510 / 768 * 100vw);
+        height: calc(246 / 768 * 100vw);
+        color: rgba(120, 120, 120, 1);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+        font-family: Roboto;
+        font-size: calc(28 / 768 * 100vw);
+        font-weight: 700;
+        line-height: calc(36 / 768 * 100vw);
+        padding-left: calc(13 / 768 * 100vw);
+        outline: none;
+    }
+
+    .registration-form__subscribe {
+        position: relative;
+        top: calc(207 / 768 * 100vw);
+        height: calc(24 / 768 * 100vw);
+    }
+
+    .registration-form__subscribe>input {
+        position: absolute;
+        opacity: 0;
+        margin: 0;
+        top: 0;
+        left: calc(43 / 768 * 100vw);
+        width: calc(510 / 768 * 100vw);
+        height: calc(24 / 768 * 100vw);
+    }
+
+    .registration-form__subscribe>label {
+        position: absolute;
+        height: calc(24 / 768 * 100vw);
+        padding-left: calc(34 / 768 * 100vw);
+        left: calc(43 / 768 * 100vw);
+        font-size: calc(14 / 768 * 100vw);
+        font-weight: 400;
+        line-height: calc(24 / 768 * 100vw);
+    }
+
+    .registration-form__subscribe>label::before {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: calc((3 / 768 * 100vw) * -1);
+        content: '';
+        width: calc(24 / 768 * 100vw);
+        height: calc(24 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid rgba(120, 120, 120, 1);
+    }
+
+    .registration-form__subscribe>label::after {
+        box-sizing: border-box;
+        position: absolute;
+        opacity: 0;
+        left: calc(6 / 768 * 100vw);
+        top: calc(3 / 768 * 100vw);
+        content: '';
+        width: calc(12 / 768 * 100vw);
+        height: calc(12 / 768 * 100vw);
+        background: rgba(120, 120, 120, 1);
+    }
+
+    .registration-form__subscribe>input:checked+label::after {
+        opacity: 1;
+    }
+
+    .registration-form__button {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        top: calc(263 / 768 * 100vw);
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+        font-family: Roboto;
+        font-size: calc(24 / 768 * 100vw);
+        font-weight: 700;
+        line-height: calc(16 / 768 * 100vw);
+        color: rgba(255, 255, 255, 1);
+        background: rgba(26, 34, 107, 1);
+        border: none;
+    }
+
+    .field-entry-error {
+        border: calc(2 / 768 * 100vw) solid rgba(238, 36, 36, 1);
+    }
+
+    .email-wrong,
+    .pass-wrong,
+    .confirm-pass-wrong {
+        position: absolute;
+        top: calc(91 / 768 * 100vw);
+        right: calc(46 / 768 * 100vw);
+        color: red;
+        text-align: right;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+    }
+
+    .pass-wrong {
+        top: calc(172 / 768 * 100vw);
+    }
+
+    .confirm-pass-wrong {
+        top: calc(253 / 768 * 100vw);
+    }
+}
